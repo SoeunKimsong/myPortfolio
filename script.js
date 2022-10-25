@@ -22,7 +22,7 @@ function loading() {
     }, 4800);
 }
 
-// window.addEventListener("DOMContentLoaded", loading);
+window.addEventListener("load", loading);
 
 
 
