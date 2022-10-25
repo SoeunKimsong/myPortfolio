@@ -1,0 +1,195 @@
+/* tablet */
+@media screen and (max-width: 1075px) {
+    #home .image{
+        display: none;
+    }
+    #home .in-tag{
+        padding: 40px 0;
+    }
+    #home .in-tag .content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 30px;
+    }
+    #home .content .cursor{
+        display: none;
+    }
+    #home .content .image{
+        display: block;
+        grid-row: span 2;
+        width: 30vw;
+        height: auto;
+        margin: auto;
+    }
+    #home .name-container{
+        margin: 0;
+    }
+    #home .para{
+        grid-column: span 2;
+        padding-left: 50px;
+    }
+
+
+    #about .skill{
+        padding: 20px 40px;
+        border-radius: 0;
+    }
+    #about .more{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    #contact .in-tag{
+        flex-direction: column;
+        gap: 20px;
+    }
+    #contact .image, #contact .contactInfo{
+        width: 90%;
+    }
+    #contact .image img{
+        max-width: none;
+    }
+}
+
+
+
+/* mobile phone */
+@media screen and (max-width: 800px) {
+    *{
+        font-size: .95em;
+    }
+    .mouse{
+        display: none;
+    }
+
+    nav{
+        justify-content: space-between;
+    }
+    nav .nav-toggle{
+        display: grid;
+        cursor: pointer;
+    }
+    nav .nav-link{
+        position: absolute;
+        flex-direction: column;
+        height: auto;
+        bottom: 0%;
+        right: 0;
+    }
+    nav .nav-link li{
+        position: absolute;
+        background-color: var(--black);
+        opacity: 1;
+        top: calc(50px * (var(--n) - 1));
+        right: -100px;
+        z-index: 200;
+        transition: var(--transition);
+        transform: rotateX(90deg);
+        transition-delay: calc(var(--n) * 0.1s);
+        box-shadow: 0 0 5px var(--blue2);
+    }
+    nav .nav-link li a{
+        display: block;
+        width: 120px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+    }
+    nav .nav-link.show li{
+        right: 0%;
+        transform: rotateX(0);
+    }
+    nav li:hover .navhover{
+        display: none;
+    }
+
+    main{
+        padding: 0 20px;
+    }
+
+    .star{
+        width: 20px;
+    }
+
+    .theme-container .moon, .theme-container .sun{
+        width: 60px;
+        height: 60px;
+    }
+    .theme-container{
+        top: 50px;
+    }
+
+    #home .in-tag .content{
+        gap: 10px;
+    }
+    #home .in-tag .content{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    #home .content .toptext{
+        width: max-content;
+        margin: auto;
+        font-size: 0.8em;
+    }
+    #home .content .myname{
+        font-size: 1em;
+    }
+    #home .content .para{
+        order: 4;
+        margin-top: 30px;
+        font-size: 0.95em;
+    }
+    #home .content .image{
+        order: 3;
+        width: 60%;
+    }
+
+    #about .aboutme{
+        flex-direction: column;
+        padding: 30px 0;
+    }
+    #about .content, #about .image{
+        width: 80%;
+    }
+    #about .myskill{
+        padding: 20px;
+    }
+    #about .myskill .container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    #about .myskill .skill{
+        border-radius: 20px;
+        font-size: 1.5em;
+    }
+
+    #about .more{
+        width: 100%;
+        padding: 20px;
+    }
+    #about .extra ul{
+        display: flex;
+        flex-direction: column;
+    }
+    #about .scalebar{
+        width: 100%;
+    }
+
+
+
+    footer .footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    footer .para{
+        width: 90%;
+    }
+    footer .logo{
+        grid-row: span 2;
+    }
+}
+
