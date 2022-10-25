@@ -100,7 +100,6 @@ img{
     left: 0;
     background-color: var(--background);
     z-index: 200;
-    display: none;
 }
 #loading .loading-container{
     width: 100%;
