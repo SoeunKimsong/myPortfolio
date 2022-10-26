@@ -1,29 +1,8 @@
-// loading screen
-let loadDot = document.querySelector('#loading .load-dot')
-let dot = "....";
-
-function loading() {
-    i = 0;
-    deleting = false;
-    function type() {
-        if (!deleting) loadDot.innerHTML = dot.substring(0, ++i);
-        if (deleting) loadDot.innerHTML = dot.substring(0, --i);
-
-        if (!deleting && i == dot.length) deleting = true;
-        if (deleting && i == 0) deleting = false;
-
-        setTimeout(type, 300);
-    }
-    type();
-
-    let loadpage = document.getElementById('loading');
-    setTimeout(() => {
-        loadpage.style.display = 'none'
-    }, 4800);
-}
-
-window.addEventListener("load", loading);
-
+// remove loading page
+let loadpage = document.getElementById('loading');
+window.addEventListener('load', () => {
+    loadpage.style.display = "none"
+})  
 
 
 // greeting with time accurately
