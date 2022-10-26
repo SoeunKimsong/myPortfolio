@@ -791,7 +791,7 @@ section .tag{
     top: 80px;
     width: 30px;
     transform: rotate(240deg);
-    animation: shooting 3s linear;
+    animation: shooting 3s linear forwards;
     z-index: -100;
 }
 @keyframes shooting {
