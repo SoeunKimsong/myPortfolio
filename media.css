@@ -64,6 +64,9 @@
         display: none;
     }
 
+    body{
+        background-position: 0 90px;
+    }
     nav{
         justify-content: space-between;
     }
